@@ -318,6 +318,7 @@ header img {
   top: 0;
   width: 100%;
   height: 10px;
+  background:#00c9c9;
   background: -webkit-linear-gradient(to left, #7c4490 0%, #00c9c9 100%); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(to left, #7c4490 0%, #00c9c9 100%); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(to left, #7c4490 0%, #00c9c9 100%); /* For Firefox 3.6 to 15 */
@@ -330,6 +331,7 @@ header img {
   top: 0;
   width: 100%;
   height: 10px;
+  background:#7c4490;
   background: -webkit-linear-gradient(to right, #7c4490 0%, #00c9c9 100%); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(to right, #7c4490 0%, #00c9c9 100%); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(to right, #7c4490 0%, #00c9c9 100%); /* For Firefox 3.6 to 15 */
@@ -427,6 +429,9 @@ header img {
 	margin-bottom:65px;
 	font-size:25px;
 	font-family:'Avenir LT W01_65 Medium1475532', 'Avenir', sans-serif;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 #annual-plan{
@@ -447,7 +452,7 @@ header img {
     height: 540px;
     margin-right: 1.5%;
     vertical-align: top;
-    width: 32%;
+    width: 31.5%;
 }
 
 .plan-option:last-of-type{
@@ -524,6 +529,12 @@ header img {
     display: inline-block;
     text-align: center;
 }
+
+.stream-hero img{
+	width: 672px;
+	height:auto;
+}
+
 .stream-options p {
     color: #ffffff;
     font-family: source sans pro;
@@ -589,6 +600,7 @@ footer li, footer li a {
     font-size: 13px;
     line-height: 16px;
     text-decoration: none;
+	display:block;
 }
 footer ul h3{
 	font-weight:bold;
@@ -626,14 +638,31 @@ footer ul.footer-child.active {
 
 .footer-icon {
     display: inline-block;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     transition: all 0.25s ease 0s;
-	font-family: sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-icon.active{
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
 	transform:rotate(90deg);
+}
+
+.footer-parent .footer-icon{
+	float:left;
+	width:5%;
+}
+
+.footer-parent a{
+	display:inline-block;
+	width:150px;
+}
+
+.footer-parent{
+	
 }
 
 /*-------About Page Styles------*/
@@ -681,8 +710,9 @@ footer ul.footer-child.active {
 .about-hero .btn {
     bottom: -34px;
     left: 50%;
-    margin-left: -7.5%;
+    margin-left: -73px;
     position: absolute;
+	width: 146px;
 }
 
 .about-play-movie{
@@ -800,8 +830,11 @@ footer ul.footer-child.active {
        margin-left: -30px;
 }
 
-.chart-header h2{
-	font-family:'Avenir LT W01_65 Medium1475532', 'Avenir', sans-serif;
+.chart-header h2 {
+	font-family: "Avenir LT W01_65 Medium1475532","Avenir",sans-serif;
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .chart-header p{
@@ -809,6 +842,9 @@ footer ul.footer-child.active {
 	font-size:18px;
 	font-family:'Avenir LT W01_65 Medium1475532', 'Avenir', sans-serif;
 	margin-top:-4px;
+	margin-right:auto;
+	margin-left:auto;
+    width: 80%;
 }
 
 .chart-img{
