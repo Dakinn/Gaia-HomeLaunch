@@ -53,6 +53,10 @@ header img {
 	 min-height:700px;
 	 width:110%;
 	 margin-top:-180px;
+	 -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    transition: opacity .5s;
 	-moz-animation-duration: 200s;
 	-webkit-animation-duration: 200s;
     -webkit-animation-name: slidein;
@@ -62,6 +66,11 @@ header img {
 	-moz-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
+}
+
+
+.KB-img.loaded img{
+    opacity: 1;
 }
 
 @keyframes "slidein" {
@@ -166,12 +175,20 @@ header img {
 }
 
 .hero-img-scroller img {
+	-webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    transition: opacity .5s;
     left: 0;
     position: relative;
     top: 0;
     width: 201%;
 	opacity:0;
 }
+.hero-img-scroller .loaded img{
+    opacity: 1;
+}
+
 @keyframes scroller{
 	0% {
     -moz-transform: translate(0%);
@@ -538,7 +555,7 @@ header img {
 .stream-logos #airplay-logo {
     background-position: -562px center;
 }
-.footer ul{
+footer ul{
 	display:inline-block;
 	list-style:none;
 	width:20%;
@@ -546,28 +563,28 @@ header img {
 	margin-top:85px;
 }
 
-.footer ul li ul {
+footer ul li ul {
     display: block;
     vertical-align: top;
     width: 100%;
 }
-.footer li, .footer li a {
+footer li, footer li a {
     color: #5c738a;
     font-size: 13px;
     line-height: 16px;
     text-decoration: none;
 }
-.footer ul h3{
+footer ul h3{
 	font-weight:bold;
 	font-family:'Avenir LT W01_65 Medium1475532', 'Avenir', sans-serif;
 }
 
-.footer a{
+footer a{
 	display: inline-block;
 	position: relative;
 	padding-bottom: 3px;
 }
-.footer a:after {
+footer a:after {
 	content: '';
 	display: block;
 	height: 1px;
@@ -575,12 +592,12 @@ header img {
 	background: transparent;
 	transition: width .35s ease, background-color .35s ease;
 }
-.footer a:hover:after {
+footer a:hover:after {
 	width: 100%;
 	background: #5C738A;
 }
 
-.footer ul .footer-child{
+footer ul .footer-child{
 	max-height:0px;
 	padding-left:10px;
 	overflow:hidden;
@@ -588,7 +605,7 @@ header img {
 	transition:all ease .25s;
 }
 
-.footer ul.footer-child.active {
+footer ul.footer-child.active {
     margin-bottom: 5px;
     margin-top: 0px;
     max-height: 100px !important;

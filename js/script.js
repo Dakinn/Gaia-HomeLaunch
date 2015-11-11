@@ -33,13 +33,23 @@ $( document ).ready(function() {
 		return false;
 	});
 	
-	//fadein Large images on load
-	$('.KB-img img, .hero-img-scroller img').one("load",function(){
-		$(this).addClass('fadeIn');
-		}).each(function(){
-			if(this.complete){ $(this).trigger("load");
-		}
+	//call rotator on testimonials
+	if ($('.testimonials').length > 0) {
+	$('.testimonial-wrapper').cycle({ 
+			fx:    'fade',
+			speed:  'slow', 
+			timeout: 7000, 
+			pause:   true,
+			next:   '.testimonial-next', 
+			prev:   '.testimonial-prev'
 	});
+	}
 
 });
+	//fadein Large images on load
+	function imgLoaded(img){
+		var imgWrapper = img.parentNode;
+		imgWrapper.className += imgWrapper.className ? ' loaded' : 'loaded';
+	};
+	
 

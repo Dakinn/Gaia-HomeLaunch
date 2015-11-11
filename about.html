@@ -29,20 +29,20 @@
 
 <body>
 <header>
-	<img src="img/header-placeholder.png" alt="header-placeholder"/>
+	<img src="img/header-placeholder.png" alt="nav-placeholder"/>
 </header>
 <section class="about-hero">
 	<div class="KB-img">
-    	<img src="img/about-hero.jpg" />
+    	<img src="img/about-hero.jpg" alt="about Gaia" onload="imgLoaded(this)"/>
 	</div>
 	<div class="content-wrapper">
     	<div class="about-hero-border">
         	<a class="btn btn--primary-cta" href="#">Sign Up Now</a>
-        	<div class="about-vimeo-close"><img src="img/vimeo-close.png" /></div>    
+        	<div class="about-vimeo-close"><img src="img/vimeo-close.png" alt="close-video"/></div>    
         </div>
         <div class="type-wrapper">
         	<h1>We are Gaia</h1>
-            <a href="#" class="about-play-movie"><img src="img/about-movie-play-btn.png" /></a>
+            <a href="#" class="about-play-movie"><img src="img/about-movie-play-btn.png" alt="play"/></a>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         </div>
         <iframe class="about-vimeo vimeo-player" src="https://player.vimeo.com/video/143395694?title=0&byline=0&portrait=0" width="977" height="544" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -56,7 +56,7 @@
         </div>
 	<div class="content-wrapper">
         <div class="chart-img">
-        	<img src="img/about-gaia-final.jpg" />
+        	<img src="img/about-gaia-final.jpg" alt="About Gaia Infographic"/>
         </div>
         <a class="btn btn--primary-cta" href="#">Sign up and get started</a>
     </div>
@@ -65,7 +65,7 @@
 	<div class="content-wrapper">
     	<div class="about-more-type">
         	<div class="about-more-img-wrap">
-            	<img src="img/about-logos.png"/>
+            	<img src="img/about-logos.png" alt="Gaia and GaiamTV logos"/>
             </div>
             <p>Five years ago we created a platform to address the needs of a growing conscious community—that went much deeper than mainstream media. Now, we have over 7,000 titles streaming exclusive content to aide those who seek more for their mind, body and spirit.  
 </p>
@@ -78,7 +78,7 @@
 </section>
 <section class="stream-options">
 	<div class="content-wrapper">
-    	<div class="stream-hero"><img src="img/devices.png"/></div>
+    	<div class="stream-hero"><img src="img/devices.png" alt="Gaia on devices"/></div>
         <h2>Evolve consciousness anywhere.</h2>
         <p>Gaia helps you achieve your highest potential at your convenience. Stream our unique programming on Apple TV, Roku, IOS, Chromecast and on the web.</p>
         <div class="stream-logos">
@@ -90,10 +90,10 @@
         </div>
     </div>
 </section>
-<section class="footer">
+<footer>
 	<div class="content-wrapper">
     	<ul>
-        	<h3>Navigation</h3>
+        	<li><h3>Navigation</h3></li>
         	<li><a href="#">Home</a></li>
         	<li><a href="#">Most Popular</a></li>
         	<li><a href="#">Recently Added</a></li>
@@ -105,64 +105,72 @@
         	<li><a href="#">Devices</a></li>
         </ul>
         <ul>
-        	<h3>Channels</h3>
+        	<li><h3>Channels</h3></li>
         	<li class="footer-parent">
-            	<span class="footer-icon">&#10095;</span> <a href="#">My Yoga</a>
+            	<span class="footer-icon">&#10095;&nbsp;</span> <a href="#">My Yoga</a>
                 <ul class="footer-child">
-                	<li><a href="#">overview</a></li>
-                	<li><a href="#">lorem ipsum dolar</a></li>
-                	<li><a href="#">lorem ipsum</a></li>
-                	<li><a href="#">filler text</a></li>
+                    <li><a href="#">Yoga</a></li>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Yoga Teachers</a></li>
+                    <li><a href="#">Fitness Instructors</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Poses</a></li>
+                    <li><a href="#">Articles</a></li>
+                </ul>
+            </li>
+            <li class="footer-parent">
+            	<span class="footer-icon">&#10095;&nbsp;</span> <a href="#">Seeking Truth</a>
+                <ul class="footer-child">
+                    <li><a href="#">Metaphysics</a></li>
+                    <li><a href="#">Paranormal</a></li>
+                    <li><a href="#">Secrets & Cover Ups</a></li>
+                    <li><a href="#">Ancient Wisdom</a></li>
+                    <li><a href="#">Original Programs</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Hosts & Guest</a></li>
+                    <li><a href="#">Articles</a></li>
+                    
                 </ul>
             </li>
         	<li class="footer-parent">
-            	<span class="footer-icon">&#10095;</span> <a href="#">Healthy & Longevity</a>
+            	<span class="footer-icon">&#10095;&nbsp;</span> <a href="#">Health & Longevity</a>
                 <ul class="footer-child">
-                	<li><a href="#">overview</a></li>
-                	<li><a href="#">lorem ipsum dolar</a></li>
-                	<li><a href="#">lorem ipsum</a></li>
-                	<li><a href="#">filler text</a></li>
+                    <li><a href="#">Food & Nutrition</a></li>
+                    <li><a href="#">Healthy Living</a></li>
+                    <li><a href="#">Alternative Health</a></li>
+                    <li><a href="#">Esoteric Healing</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Health Experts</a></li>
+                    <li><a href="#">Articles</a></li>
                 </ul>
             </li>
         	<li class="footer-parent">
-            	<span class="footer-icon">&#10095;</span> <a href="#">Seeking Truth</a>
+            	<span class="footer-icon">&#10095;&nbsp;</span> <a href="#">Spiritual Growth</a>
                 <ul class="footer-child">
-                	<li><a href="#">overview</a></li>
-                	<li><a href="#">lorem ipsum dolar</a></li>
-                	<li><a href="#">lorem ipsum</a></li>
-                	<li><a href="#">filler text</a></li>
+                	<li><a href="#">Personal development</a></li>
+                	<li><a href="#">Spirituality</a></li>
+                	<li><a href="#">Meditation</a></li>
+                	<li><a href="#">Philosophy & Religion</a></li>
+                	<li><a href="#">Originals</a></li>                	
+                    <li><a href="#">Collections</a></li>
+                	<li><a href="#">Guides</a></li>
+                	<li><a href="#">Hosts & Guests</a></li>
+                	<li><a href="#">Articles</a></li>
                 </ul>
             </li>
         	<li class="footer-parent">
-            	<span class="footer-icon">&#10095;</span> <a href="#">Spiritual Growth</a>
+            	<span class="footer-icon">&#10095;&nbsp;</span> <a href="#">Original Programs</a>
                 <ul class="footer-child">
-                	<li><a href="#">overview</a></li>
-                	<li><a href="#">lorem ipsum dolar</a></li>
-                	<li><a href="#">lorem ipsum</a></li>
-                	<li><a href="#">filler text</a></li>
-                </ul>
-            </li>
-        	<li class="footer-parent">
-            	<span class="footer-icon">&#10095;</span> <a href="#">Films and Series</a>
-                <ul class="footer-child">
-                	<li><a href="#">overview</a></li>
-                	<li><a href="#">lorem ipsum dolar</a></li>
-                	<li><a href="#">lorem ipsum</a></li>
-                	<li><a href="#">filler text</a></li>
-                </ul>
-            </li>
-        	<li class="footer-parent">
-            	<span class="footer-icon">&#10095;</span> <a href="#">Original Programs</a>
-                <ul class="footer-child">
-                	<li><a href="#">overview</a></li>
-                	<li><a href="#">lorem ipsum dolar</a></li>
-                	<li><a href="#">lorem ipsum</a></li>
-                	<li><a href="#">filler text</a></li>
+                	<li><a href="#">Wisdom Teachings</a></li>
+                	<li><a href="#">Open Minds</a></li>
+                	<li><a href="#">Beyond Belief</a></li>
+                	<li><a href="#">Cosmic Disclosure</a></li>
                 </ul>
             </li>
         </ul>
         <ul>
-        	<h3>Membership</h3>
+        	<li><h3>Membership</h3></li>
         	<li><a href="#">My Account</a></li>
         	<li><a href="#">Support</a></li>
         	<li><a href="#">Give GaiaTV</a></li>
@@ -172,13 +180,13 @@
         	<li><a href="#">Spam Policy</a></li>
         </ul>
         <ul>
-        	<h3>More from Gaia</h3>
+        	<li><h3>More from Gaia</h3></li>
         	<li><a href="#">About Gaia</a></li>
         	<li><a href="#">Shop Gaia</a></li>
         	<li><a href="#">Recently Added</a></li>
         	<li><a href="#">Spiritual Cinema Circle</a></li>
         </ul>
     </div>
-</section>
+</footer>
 </body>
 </html>
